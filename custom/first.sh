@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://github.com/281677160/build-actions
+# https://github.com/Namia-A/OpenWrt-X
 # common Module by 28677160
 # matrix.target=${FOLDER_NAME}
 cd ${GITHUB_WORKSPACE}
@@ -25,7 +25,7 @@ if [[ -n "${BENDI_VERSION}" ]]; then
 else
   git clone -b main https://user:${REPO_TOKEN}@github.com/${GIT_REPOSITORY}.git repogx
 fi
-git clone -b main --depth 1 https://github.com/281677160/build-actions shangyou
+git clone -b main --depth 1 https://github.com/Namia-A/OpenWrt-X shangyou
 
 if [[ ! -d "repogx" ]]; then
   echo -e "\033[31m 本地仓库下载错误 \033[0m"
@@ -255,7 +255,7 @@ BRANCH_HEAD="$(git rev-parse --abbrev-ref HEAD)"
 if [[ "${OPERATES_BUILD}" == "1" ]]; then
   rm -rf backups
 fi
-if [[ "${GIT_REPOSITORY}" =~ (281677160/build-actions|281677160/autobuild) ]]; then
+if [[ "${GIT_REPOSITORY}" =~ (Namia-A/OpenWrt-X|Namia-A/autobuild) ]]; then
   rm -rf backups
   BANBEN_SHUOMING="Update $(date +%Y.%m%d.%H%M.%S)"
 fi
@@ -301,16 +301,16 @@ exit 0
 function Diy_memu() {
 cd ${GITHUB_WORKSPACE}
 export OPERATES_BUILD="0"
-curl -fsSL https://raw.githubusercontent.com/281677160/common/main/common.sh -o common.sh
+curl -fsSL https://raw.githubusercontent.com/Namia-A/common/main/common.sh -o common.sh
 if [[ $? -ne 0 ]]; then
-  wget -q https://raw.githubusercontent.com/281677160/common/main/common.sh -O common.sh
+  wget -q https://raw.githubusercontent.com/Namia-A/common/main/common.sh -O common.sh
 fi
 export ACTIONS_VERSION="$(grep -E "ACTIONS_VERSION=.*" "common.sh" |grep -Eo [0-9]+\.[0-9]+\.[0-9]+)"
 export DIY_PART_SH="$(grep -Eo "DIY_PART_SH=.*" "common.sh" |grep '.sh' |awk 'NR==1' |cut -d'"' -f2)"
 echo "DIY_PART_SH=${DIY_PART_SH}" >> ${GITHUB_ENV}
 if [[ -n "${BENDI_VERSION}" ]]; then
   export BENDI_VERSION="1"
-  export GIT_REPOSITORY="281677160/build-actions"
+  export GIT_REPOSITORY="Namia-A/OpenWrt-X"
   sudo rm -rf build common.sh
   [[ -d "operates" ]] && cp -Rf operates build
   sed -i '/TONGBU_BENDI/d' ${GITHUB_ENV}
