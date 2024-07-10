@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://github.com/Namia-A/OpenWrt-X
-# common Module by 28677160
+# common Module by Namia-A
 # matrix.target=${FOLDER_NAME}
 cd ${GITHUB_WORKSPACE}
 
