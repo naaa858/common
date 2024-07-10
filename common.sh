@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://github.com/Namia-A/OpenWrt-X
-# common Module by Namia-A
+# common Module by Namia-Ac
 # matrix.target=${FOLDER_NAME}
 
 ACTIONS_VERSION="1.0.7"
