@@ -122,7 +122,7 @@ COOLSNOWWOLF)
   export DIY_WORK="${FOLDER_NAME}master"
 ;;
 LIENOL)
-  export REPO_URL="https://github.com/Namia-A/rockchip_rk3568_openwrt"
+  export REPO_URL="https://github.com/Lienol/openwrt"
   export SOURCE="Lienol"
   export SOURCE_OWNER="Lienol's"
   export LUCI_EDITION="$(echo "${REPO_BRANCH}" |sed 's/openwrt-//g')"
