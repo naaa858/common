@@ -326,7 +326,7 @@ src-git helloworld https://github.com/fw876/helloworld.git
 src-git namia https://github.com/Namia-A/package;main
 src-git passwall3 https://github.com/xiaorouji/openwrt-passwall-packages;main 
 src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main
-src-git droidnet https://github.com/animegasan/luci-app-droidnet.master
+src-git droidnet https://github.com/animegasan/luci-app-droidnet.git;master
 
 EOF
 ./scripts/feeds update -a
