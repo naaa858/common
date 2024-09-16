@@ -322,7 +322,7 @@ cat >>"feeds.conf.default" <<-EOF
 src-git danshui1 https://github.com/Namia-A/openwrt-package.git;${SOURCE}
 src-git helloworld https://github.com/fw876/helloworld.git
 src-git namia https://github.com/Namia-A/package;main
-src-git clone https://github.com/ouyangzq/sendat package/sendat
+src-git https://github.com/ouyangzq/luci-app-cpe;main
 
 
 EOF
