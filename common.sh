@@ -323,7 +323,14 @@ src-git danshui1 https://github.com/Namia-A/openwrt-package.git;${SOURCE}
 src-git helloworld https://github.com/fw876/helloworld.git
 src-git passwall3 https://github.com/xiaorouji/openwrt-passwall-packages;main
 src-git namia https://github.com/Namia-A/package;main
-src-git cpe https://github.com/ouyangzq/sendat;master
+src-git sendat https://github.com/ouyangzq/sendat;master
+src-git cpe https://github.com/ouyangzq/luci-app-cpe;main
+
+
+
+
+
+
 
 
 EOF
