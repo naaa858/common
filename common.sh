@@ -321,6 +321,7 @@ mv -f uniq.conf feeds.conf.default
 cat >>"feeds.conf.default" <<-EOF
 src-git kenzo https://github.com/kenzok8/openwrt-packages;master
 src-git small https://github.com/kenzok8/small;master
+src-git 5gmoden https://github.com/Siriling/5G-Modem-Support;main
 
 src-git danshui4 https://github.com/Namia-A/openwrt-package1.git;passwall
 src-git danshui5 https://github.com/Namia-A/openwrt-package1.git;Theme2
