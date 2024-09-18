@@ -319,18 +319,15 @@ mv -f uniq.conf feeds.conf.default
 
 # 这里增加了源,要对应的删除/etc/opkg/distfeeds.conf插件源
 cat >>"feeds.conf.default" <<-EOF
+src-git kenzo https://github.com/kenzok8/openwrt-packages;master
+src-git small https://github.com/kenzok8/small;master
+
 src-git danshui4 https://github.com/Namia-A/openwrt-package1.git;passwall
 src-git danshui5 https://github.com/Namia-A/openwrt-package1.git;Theme2
 src-git danshui6 https://github.com/Namia-A/openwrt-package1.git;Theme1
 src-git danshui7 https://github.com/Namia-A/openwrt-package1.git;helloworld
 src-git danshui8 https://github.com/Namia-A/openwrt-package1.git;usb
 src-git danshui9 https://github.com/Namia-A/openwrt-package1.git;adguard
-
-src-git kenzo https://github.com/kenzok8/openwrt-packages;master
-src-git small https://github.com/kenzok8/small;master
-
-
-
 
 
 EOF
