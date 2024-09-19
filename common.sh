@@ -321,12 +321,12 @@ mv -f uniq.conf feeds.conf.default
 cat >>"feeds.conf.default" <<-EOF
 src-git kenzo https://github.com/kenzok8/openwrt-packages;master
 src-git small https://github.com/kenzok8/small;master
-src-git danshui4 https://github.com/Namia-A/openwrt-package1.git;passwall
-src-git danshui5 https://github.com/Namia-A/openwrt-package1.git;Theme2
-src-git danshui6 https://github.com/Namia-A/openwrt-package1.git;Theme1
-src-git danshui7 https://github.com/Namia-A/openwrt-package1.git;helloworld
-src-git danshui8 https://github.com/Namia-A/openwrt-package1.git;usb
-src-git danshui9 https://github.com/Namia-A/openwrt-package1.git;adguard
+src-git danshui4 https://github.com/Namia-A/openwrt-package.git;passwall
+src-git danshui5 https://github.com/Namia-A/openwrt-package.git;Theme2
+src-git danshui6 https://github.com/Namia-A/openwrt-package.git;Theme1
+src-git danshui7 https://github.com/Namia-A/openwrt-package.git;helloworld
+src-git danshui8 https://github.com/Namia-A/openwrt-package.git;usb
+src-git danshui9 https://github.com/Namia-A/openwrt-package.git;adguard
 src-git 5gmoden https://github.com/Siriling/5G-Modem-Support;main
 
 EOF
